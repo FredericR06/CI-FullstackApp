@@ -29,9 +29,9 @@ jobs:
       # Set up a Node.js environment using the specified node version.
       - name: Set Up Node.js Env
         uses: actions/setup-node@v3
-          with:
-            node-version: ${{matrix.version}}
-            cache: 'npm'
+        with:
+          node-version: ${{matrix.version}}
+          cache: 'npm'
 
       # Install the dependencies.
       - run:  | 
