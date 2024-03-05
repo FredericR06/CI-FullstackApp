@@ -35,15 +35,15 @@ jobs:
 
       # Install the dependencies.
       - run:  | 
-          npm ci
+          cd backend && npm ci
 
       # Run the tests.
       - run: |
-          npm test
+          cd backend && npm test
 
       # Run the linter.
       - run:  |
-          npm lint
+          cd backend && npm run lint
 
       # Send a console message at completion.
       - run: |
