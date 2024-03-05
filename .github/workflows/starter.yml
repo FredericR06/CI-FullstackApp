@@ -19,7 +19,7 @@ jobs:
 
     strategy: 
       matrix:
-        version: [16, 18]
+        version: ['16.x', '18.x']
 
     steps:
       # Check out the code from the repository.
