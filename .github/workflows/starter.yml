@@ -5,7 +5,7 @@ name: ci-fullstack-workflow
 on:
   push:
     branches: 
-    - main
+    - master
 
   schedule:
     - cron: '0 0 * * 0'
