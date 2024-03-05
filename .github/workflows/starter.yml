@@ -31,7 +31,6 @@ jobs:
         uses: actions/setup-node@v3
         with:
           node-version: ${{matrix.version}}
-          cache: 'npm'
 
       # Install the dependencies.
       - run: cd backend && npm ci
